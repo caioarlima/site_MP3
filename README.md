@@ -58,13 +58,13 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 Siga os passos abaixo para configurar o ambiente local:
 
 1. **Clonar o Repositório:**
-```
+```bash
 git clone https://github.com/caioarlima/site_MP3.git
 cd site_MP3
 ```
 
 2. **Subir o Container:**
-```
+```bash
 docker-compose up -d
 ```
 
@@ -91,3 +91,9 @@ Abra [http://mp3.test](http://mp3.test) no navegador.
 - Certifique-se de ter o Docker e o Docker Compose instalados.
 - Organize suas músicas dentro das pastas correspondentes a cada gênero em `public/albuns/`.
 - As páginas `new_album.php` e `new_music.php` facilitam a adição de novos conteúdos sem alterar o código manualmente.
+
+---
+
+## 📂 Estrutura Visual
+
+![Exemplo de Player](./docs/player_screenshot.png)
