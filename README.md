@@ -17,7 +17,7 @@ Uma aplicação web completa para gerenciamento e reprodução de álbuns musica
 
 A estrutura foi desenhada seguindo o padrão de separação de responsabilidades (View/Public):
 
-```text
+
 ├── 📁 pages/                 # Páginas do sistema
 │   ├── albuns.php            # Visualização dos álbuns
 │   ├── erro404.php           # Página de erro de rota
@@ -38,7 +38,6 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 │   └── global.css            # Estilização (Layout Moderno)
 ├── helpers.php               # Funções auxiliares
 └── index.php                 # Arquivo de entrada principal
-
 
 ---
 
@@ -79,9 +78,9 @@ Abra [http://mp3.test](http://mp3.test) no navegador.
 >    - Windows: `C:\Windows\System32\drivers\etc\hosts`
 >    - Linux/Mac: `/etc/hosts`
 > 2. Adicione a linha:
->    ```
->    127.0.0.1   mp3.test
->    ```
+```text
+127.0.0.1   mp3.test
+```
 > 3. Certifique-se que seu servidor (Apache/Nginx/Docker) está configurado para responder ao host `mp3.test`.
 
 ---
@@ -91,9 +90,3 @@ Abra [http://mp3.test](http://mp3.test) no navegador.
 - Certifique-se de ter o Docker e o Docker Compose instalados.
 - Organize suas músicas dentro das pastas correspondentes a cada gênero em `public/albuns/`.
 - As páginas `new_album.php` e `new_music.php` facilitam a adição de novos conteúdos sem alterar o código manualmente.
-
----
-
-## 📂 Estrutura Visual
-
-![Exemplo de Player](./docs/player_screenshot.png)
