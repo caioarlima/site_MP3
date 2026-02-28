@@ -41,7 +41,7 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 
 ---
 
-## ✨ Funcionalidades Principais
+##✨ Funcionalidades Principais
 
 * **🎧 Player Interativo:** Interface completa para reprodução de faixas com controle de progresso e volume.
 * **📂 Organização Automática:** O sistema mapeia as pastas dentro de `public/albuns/` e gera a interface dinamicamente.
