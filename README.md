@@ -39,16 +39,17 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 ├── helpers.php               # Funções auxiliares
 └── index.php                 # Arquivo de entrada principal
 
+
 ---
 
-##✨ Funcionalidades Principais
+## ✨ Funcionalidades Principais
 
-* **🎧 Player Interativo:** Interface completa para reprodução de faixas com controle de progresso e volume.
-* **📂 Organização Automática:** O sistema mapeia as pastas dentro de `public/albuns/` e gera a interface dinamicamente.
-* **🖼️ Gestão de Capas:** Suporte para exibição de artes de álbuns vinculadas a cada gênero musical.
-* **➕ Cadastro de Conteúdo:** Telas exclusivas (`new_album.php` e `new_music.php`) para expandir sua biblioteca musical.
-* **📱 Design Responsivo:** Experiência otimizada para qualquer dispositivo através do `global.css`.
-* **🔗 Roteamento Simples:** Sistema centralizado no `index.php` para navegação entre páginas e tratamento de erros (404).
+- **🎧 Player Interativo:** Interface completa para reprodução de faixas com controle de progresso e volume.
+- **📂 Organização Automática:** O sistema mapeia as pastas dentro de `public/albuns/` e gera a interface dinamicamente.
+- **🖼️ Gestão de Capas:** Suporte para exibição de artes de álbuns vinculadas a cada gênero musical.
+- **➕ Cadastro de Conteúdo:** Telas exclusivas (`new_album.php` e `new_music.php`) para expandir sua biblioteca musical.
+- **📱 Design Responsivo:** Experiência otimizada para qualquer dispositivo através do `global.css`.
+- **🔗 Roteamento Simples:** Sistema centralizado no `index.php` para navegação entre páginas e tratamento de erros (404).
 
 ---
 
@@ -57,10 +58,36 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 Siga os passos abaixo para configurar o ambiente local:
 
 1. **Clonar o Repositório:**
-   ```bash
-   git clone (https://github.com/caioarlima/site_MP3.git)
-2. **Subir o Container:**
+```
+git clone https://github.com/caioarlima/site_MP3.git
+cd site_MP3
+```
 
+2. **Subir o Container:**
+```
 docker-compose up -d
+```
+
 3. **Acessar:**
-Abra http://localhost:8080 (ou a porta configurada no seu arquivo).
+
+Abra [http://mp3.test](http://mp3.test) no navegador.
+
+> 💡 **Observação:** O endereço `mp3.test` é apenas um alias para o seu localhost.  
+> Para funcionar corretamente:
+> 
+> 1. Edite o arquivo `hosts` do seu sistema:
+>    - Windows: `C:\Windows\System32\drivers\etc\hosts`
+>    - Linux/Mac: `/etc/hosts`
+> 2. Adicione a linha:
+>    ```
+>    127.0.0.1   mp3.test
+>    ```
+> 3. Certifique-se que seu servidor (Apache/Nginx/Docker) está configurado para responder ao host `mp3.test`.
+
+---
+
+## 📝 Observações
+
+- Certifique-se de ter o Docker e o Docker Compose instalados.
+- Organize suas músicas dentro das pastas correspondentes a cada gênero em `public/albuns/`.
+- As páginas `new_album.php` e `new_music.php` facilitam a adição de novos conteúdos sem alterar o código manualmente.
