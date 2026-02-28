@@ -17,7 +17,7 @@ Uma aplicação web completa para gerenciamento e reprodução de álbuns musica
 
 A estrutura foi desenhada seguindo o padrão de separação de responsabilidades (View/Public):
 
-
+```
 ├── 📁 pages/                 # Páginas do sistema
 │   ├── albuns.php            # Visualização dos álbuns
 │   ├── erro404.php           # Página de erro de rota
@@ -38,7 +38,7 @@ A estrutura foi desenhada seguindo o padrão de separação de responsabilidades
 │   └── global.css            # Estilização (Layout Moderno)
 ├── helpers.php               # Funções auxiliares
 └── index.php                 # Arquivo de entrada principal
-
+```
 ---
 
 ## ✨ Funcionalidades Principais
