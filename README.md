@@ -18,26 +18,26 @@ Uma aplicação web completa para gerenciamento e reprodução de álbuns musica
 A estrutura foi desenhada seguindo o padrão de separação de responsabilidades (View/Public):
 
 ```
-├── 📁 pages/                 # Páginas do sistema
-│   ├── albuns.php            # Visualização dos álbuns
-│   ├── erro404.php           # Página de erro de rota
-│   ├── musicas.php           # Player e lista de faixas
-│   ├── new_album.php         # Cadastro de novos álbuns
-│   └── new_music.php         # Cadastro de novas músicas
-├── 📁 public/                # Arquivos públicos e ativos
-│   ├── 📁 albuns/            # Biblioteca de mídia
-│   │   ├── 📁 Funk/          # Gênero: Funk
-│   │   │   ├── 📁 music/     # Arquivos .mp3 do gênero
-│   │   │   └── funk.jpg      # Capa do álbum/gênero
-│   │   ├── 📁 Pagode/        # Gênero: Pagode
-│   │   │   ├── 📁 music/     # Arquivos .mp3 do gênero
-│   │   │   └── pagode.jpg    # Capa do álbum/gênero
-│   │   └── 📁 Samba/         # Gênero: Samba
-│   │       ├── 📁 music/     # Arquivos .mp3 do gênero
-│   │       └── Samba.jpg     # Capa do álbum/gênero
-│   └── global.css            # Estilização (Layout Moderno)
-├── helpers.php               # Funções auxiliares
-└── index.php                 # Arquivo de entrada principal
+├── 📁 pages/                 
+│   ├── albuns.php            
+│   ├── erro404.php           
+│   ├── musicas.php           
+│   ├── new_album.php         
+│   └── new_music.php         
+├── 📁 public/                
+│   ├── 📁 albuns/            
+│   │   ├── 📁 Funk/        
+│   │   │   ├── 📁 music/     
+│   │   │   └── funk.jpg      
+│   │   ├── 📁 Pagode/        
+│   │   │   ├── 📁 music/     
+│   │   │   └── pagode.jpg   
+│   │   └── 📁 Samba/         
+│   │       ├── 📁 music/     
+│   │       └── Samba.jpg     
+│   └── global.css            
+├── helpers.php               
+└── index.php                 
 ```
 ---
 
